@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess the Number !!</title>
+	<style type="text/css">
+		
+body
+{
+	margin: none;
+	padding: none;
+	background-color: #D2D2D2;
+}
+
+div 
+{   
+	width: 300px;
+	padding: 30px 25px 30px 50px;
+	background-color: grey;
+	border: 2px solid black;
+	position: relative;
+	top: 30px ;
+	left: 520px;
+}
+
+
+
+
+	</style>
+</head>
+<body>
+<div><h2>Guess the number in betweeen 0 to 5 !!</h2><br> <br>
+<input type="text" id="input"> <button id="button">Try your luck </button>
+
+</div>
+
+<script type="text/javascript">
+	
+	document.getElementById('button').onclick = function () {
+		
+		var randomNumber = Math.floor((Math.random()*6));
+		if (document.getElementById('input').value == randomNumber) {
+
+			alert("Well done , Its correct !!")
+		}
+		else 
+		{
+			alert("Nope the number was " + randomNumber)
+		}
+	}
+</script>
+</body>
+</html>
